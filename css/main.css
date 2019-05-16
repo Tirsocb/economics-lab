@@ -1,0 +1,138 @@
+h1{
+    font-family: "Courier New";
+    text-align: center;
+}
+body{
+    font-family: "Courier New";
+    width: 90%;
+    height: 90%;
+    border-width: thick;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: inset;
+    text-align: left;
+}
+
+input[type=text], input[type=number]{
+    font-size: large !important;
+    font-weight: bolder !important;
+}
+
+#availableA {
+    position: absolute;
+    top: 125px;
+    left: 625px;
+    text-align: center;
+    width: 5%;
+    background-color: #66ff33;
+    font-family: "Courier New";
+
+}
+#availableB {
+    position: absolute;
+    top: 145px;
+    left: 625px;
+    text-align: center;
+    width: 5%;
+    font-family: "Courier New";
+    background-color: #66ff33;
+}
+#availableC {
+    position: absolute;
+    top: 165px;
+    left: 625px;
+    text-align: center;
+    width: 5%;
+    background-color: #66ff33;
+    font-family: "Courier New";
+}
+
+#priceA {
+    position: absolute;
+    top: 125px;
+    left: 730px;
+    text-align: center;
+    width: 5%;
+    background-color: #66ff33;
+    font-family: "Courier New";
+}
+
+#priceB {
+    position: absolute;
+    top: 145px;
+    left: 730px;
+    text-align: center;
+    width: 5%;
+    background-color: #66ff33;
+    font-family: "Courier New";
+}
+
+#priceC {
+    position: absolute;
+    top: 165px;
+    left: 730px;
+    text-align: center;
+    width: 5%;
+    background-color: #66ff33;
+    font-family: "Courier New";
+}
+
+#buyA {
+    position: absolute;
+    top: 350px;
+    left: 625px;
+    text-align: center;
+    width: 5%;
+    font-family: "Courier New";
+    background-color: #ff6600;
+}
+
+#buyB {
+    position: absolute;
+    top: 370px;
+    left: 625px;
+    text-align: center;
+    width: 5%;
+    font-family: "Courier New";
+    background-color: #ff6600;
+}
+
+#buyC {
+    position: absolute;
+    top: 390px;
+    left: 625px;
+    text-align: center;
+    width: 5%;
+    font-family: "Courier New";
+    background-color: #ff6600;
+}
+
+#sellA {
+    position: absolute;
+    top: 350px;
+    left: 730px;
+    text-align: center;
+    width: 5%;
+    font-family: "Courier New";
+    background-color: #ff6600;
+}
+
+#sellB {
+    position: absolute;
+    top: 370px;
+    left: 730px;
+    text-align: center;
+    width: 5%;
+    font-family: "Courier New";
+    background-color: #ff6600;
+}
+
+#sellC {
+    position: absolute;
+    top: 390px;
+    left: 730px;
+    text-align: center;
+    width: 5%;
+    font-family: "Courier New";
+    background-color: #ff6600;
+}
