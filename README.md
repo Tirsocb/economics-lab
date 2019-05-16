@@ -17,7 +17,7 @@ cd ./<directorio>
 ```bash
 npm i
 ```
-3. Correro
+3. Correr
 ```bash
 npm start
-```# economics-lab
+
