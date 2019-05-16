@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplayer Game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>SUPPLY AND DEMAND</h1>
+
+    <h2>Jugador: <span id="player-id">0</span></h2>
+    <h3 id="status">Esperando otros jugadores...</h3>
+    <div style="position: absolute; top: 80px; left: 510px;font-style: italic">Market</div>
+    <div style="position: absolute; top: 125px; left: 500px;">Company A</div>
+    <div style="position: absolute; top: 145px; left: 500px;">Company B</div>
+    <div style="position: absolute; top: 165px; left: 500px;">Company C</div>
+    <br><br>
+    <div style="position: absolute; top: 100px; left: 625px;">Available</div>
+    <div style="position: absolute; top: 100px; left: 730px;">Price</div>
+
+    <br style="border: black">
+    <input id="availableA" type="text" name="buyB" disabled><br>
+    <input id="availableB" type="text" name="buyB" disabled><br>
+    <input id="availableC" type="text" name="buyC" disabled><br>
+    <input id="priceA" type="text" name="sellA" disabled><br>
+    <input id="priceB" type="text" name="sellB" disabled><br>
+    <input id="priceC" type="text" name="sellC" disabled><br>
+
+    <div style="position: absolute; top: 210px; left: 600px; font-style: italic">My Stocks</div>
+    <table style="width:20%; position: absolute; top: 240px; left: 500px">
+        <tr>
+            <th> </th>
+            <th> Company 1 </th>
+            <th> Company 2 </th>
+            <th> Company 3 </th>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td id="quantityA"> </td>
+            <td id="quantityB"> </td>
+            <td id="quantityC"> </td>
+        </tr>
+        <tr>
+            <td>Balance</td>
+            <td style="color: red" id="playerMoney"> </td>
+        </tr>
+    </table>
+
+    <div style="position: absolute; top: 330px; left: 625px;">Buy</div>
+    <div style="position: absolute; top: 330px; left: 730px;">Sell</div>
+    <button type="button" id="submit-btn" onclick="submit()" style="margin-top: 200px; margin-left: 670px; display: none;">Submit</button>
+    <div style="position: absolute; top: 350px; left: 500px;">Company A</div>
+    <div style="position: absolute; top: 370px; left: 500px;">Company B</div>
+    <div style="position: absolute; top: 390px; left: 500px;">Company C</div>
+
+    <div style="position: absolute; top: 430px; left: 500px;">Total spent: <span id="total-spent" style="color: red"></span></div>
+
+    <input value="0" onchange="buyCalcTotal()" min="0" id="buyA" type="number" name="buyA"><br>
+    <input value="0" onchange="buyCalcTotal()" min="0" id="buyB" type="number" name="buyB"><br>
+    <input value="0" onchange="buyCalcTotal()" min="0" id="buyC" type="number" name="buyC"><br>
+    <input value="0" min="0" id="sellA" type="number" name="sellA"><br>
+    <input value="0" min="0" id="sellB" type="number" name="sellB"><br>
+    <input value="0" min="0" id="sellC" type="number" name="sellC"><br>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="static/game.js"></script>
+    <!--<script type="text/javascript" src="Gamelogic/Company.js" ></script>-->
+</body>
+</html>
