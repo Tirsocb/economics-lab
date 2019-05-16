@@ -1,0 +1,26 @@
+{
+  "name": "sdgame",
+  "version": "1.0.0",
+  "description": "SDgame",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start:live": "nodemon --exec node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tirsocb/SDgame.git"
+  },
+  "author": "Alejandra Lemus & Tirso Cordova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tirsocb/SDgame/issues"
+  },
+  "homepage": "https://github.com/Tirsocb/SDgame#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "socket.io": "^2.2.0"
+  }
+}
